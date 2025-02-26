@@ -1,16 +1,21 @@
-// Optional JavaScript for potential interactivity
-document.querySelector('.customization-button').addEventListener('click', function() {
-    alert('Customize header navigation clicked');
+const hamburgerInput = document.querySelector(".hamburger input");
+const navLinks = document.querySelector(".nav-links");
+
+console.log(hamburgerInput);
+
+
+hamburgerInput.addEventListener("change", () => {
+  if (hamburgerInput.checked) {    
+    navLinks.classList.add("active");
+  } else {    
+    navLinks.classList.remove("active");
+  }
 });
 
-// Set initial state for about-card
-gsap.set(".about-card", { y: 0 });
-
-// Floating in air effect for about-card
-gsap.to(".about-card", {
-    y: -20,
-    repeat: -1,
-    yoyo: true,
-    duration: 1.5,
-    ease: "power1.inOut",
+// Close menu when clicking nav links
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    hamburgerInput.checked = false;
+    navLinks.classList.remove("active");
+  });
 });
