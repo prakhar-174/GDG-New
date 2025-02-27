@@ -402,9 +402,9 @@ header {
     .hero-content {
         flex-direction: column;
     }
-    /* .browser-mockup {
-        flex: 1;
-    } */
+    .browser-mockup {
+        display: none;
+    }
     .hero-title {
         font-size: 42px;
     }
