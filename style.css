@@ -23,7 +23,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: #1a1a1a;
+    /* background-color: #1a1a1a;
+   */
+   background: rgba( 255, 255, 255, 0.2 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 4.5px );
+   -webkit-backdrop-filter: blur( 4.5px );
+   border-radius: 5px;
+   position: fixed;
+    width: 100%;
+    z-index: 15;
 }
 
 .logo-container {
@@ -38,10 +47,11 @@ header {
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    color: white;
+    color: #3a75e0;
 }
+
 
 .nav{
   display: flex;
@@ -53,6 +63,7 @@ header {
   /* width: 100%; */
 }
 
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -60,14 +71,15 @@ header {
 }
 
 .nav-links a {
-    color: white;
+    color: #3a75e0;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 18px;
 }
 
-.nav-links a:hover {
+/* .nav-links a:hover {
     color: #4285F4;
-}
+} */
 
 /* From Uiverse.io by JulanDeAlb */ 
 .hamburger {
@@ -88,7 +100,7 @@ header {
 
 .line {
   fill: none;
-  stroke: white;
+  stroke: #3a75e0;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;
@@ -153,6 +165,7 @@ header {
 }
 
 .title {
+  margin-top: 175px;
     margin-bottom: 20px;
 }
 
