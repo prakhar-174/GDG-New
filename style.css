@@ -6,6 +6,12 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-timeline: 300ms;
+    cursor: url('Assets/arrowhead-rounded-outline.png') 5 5, auto;
+}
+
 body {
     background-color: #121212;
     color: white;
@@ -356,17 +362,16 @@ header {
 }
 
 .browser-bar {
-    height: 25px;
-    background-color: #3A3A3A;
-    border-radius: 5px;
-    margin-bottom: 15px;
+  height: 25px;
+  background-color: #3A3A3A;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
-.browser-content img {
-    height: 300px;
-    /* background-color: #ffffff; */
-    position: relative;
-    width: 100%;
+.browser-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
 }
 
 .browser-row {
@@ -399,19 +404,19 @@ header {
 
 /* Mobile responsiveness */
 @media (max-width: 992px) {
-    .hero-content {
-        flex-direction: column;
-    }
-    .browser-mockup {
-        display: none;
-    }
-    .hero-title {
-        font-size: 42px;
-    }
-    
-    .stats {
-        gap: 40px;
-    }
+  .hero-content {
+      flex-direction: column;
+  }
+  
+  .hero-title {
+      font-size: 42px;
+  }
+  .browser-bar{
+    display: none;
+  }
+  .stats {
+      gap: 40px;
+  }
 }
 
 @media (max-width: 768px) {

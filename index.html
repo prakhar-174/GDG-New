@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GDG-ABESEC</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Assets/gdglogo-removebg-preview.png" type="image/x-icon">
   </head>
   <body>
     <div class="stars">
@@ -60,7 +61,7 @@
       <div class="star"></div>
     </div>
 
-    <header>
+    <header id="home">
       <div class="logo-container">
         <img src="/Assets/gdglogo-removebg-preview.png" alt="GDG Logo" />
         <h1 class="logo">Google Developers Group</h1>
@@ -71,8 +72,8 @@
           <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#">Events</a>
-            <a href="#">Connect Us</a>
+            <a href="#events">Events</a>
+            <a href="#foot">Connect Us</a>
           </div>
         </div>
 
@@ -89,7 +90,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" >
       <div class="title">
         <h1>Google Developers Group <span>ABESEC</span></h1>
       </div>
@@ -105,51 +106,58 @@
 
     <section class="hero-h">
       <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            <span class="blue-text">Innovate,</span>
-            <span class="green-text">Create,</span><br />
-            Transform with <span class="white-text">GDG</span>
-          </h1>
-          <p class="hero-subtitle">
-            Join ABESEC's premier tech community where innovation meets
-            opportunity. Learn, build, and grow with fellow developers
-            passionate about Google technologies.
-          </p>
-          <div class="buttons">
-            <a href="#" class="button primary-button">Join Community</a>
-            <a href="#" class="button secondary-button">Explore Events</a>
+          <div class="hero-text">
+              <h1 class="hero-title">
+                  <span class="blue-text">Innovate,</span> <span class="green-text">Create,</span><br>
+                  Transform with <span class="white-text">GDG</span>
+              </h1>
+              <p class="hero-subtitle">
+                  Join ABESEC's premier tech community where innovation meets
+                  opportunity. Learn, build, and grow with fellow developers
+                  passionate about Google technologies.
+              </p>
+              <div class="buttons">
+                  <a href="#" class="button primary-button">Join Community</a>
+                  <a href="#" class="button secondary-button">Explore Events</a>
+              </div>
+              <div class="stats">
+                  <div class="stat-item">
+                      <div class="stat-number blue-number">500+</div>
+                      <div class="stat-label">Community Members</div>
+                  </div>
+                  <div class="stat-item">
+                      <div class="stat-number green-number">50+</div>
+                      <div class="stat-label">Events Conducted</div>
+                  </div>
+                  <div class="stat-item">
+                      <div class="stat-number yellow-number">20+</div>
+                      <div class="stat-label">Tech Workshops</div>
+                  </div>
+              </div>
           </div>
-          <div class="stats">
-            <div class="stat-item">
-              <div class="stat-number blue-number">700+</div>
-              <div class="stat-label">Community Members</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number green-number">15+</div>
-              <div class="stat-label">Events Conducted</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number yellow-number">20+</div>
-              <div class="stat-label">Tech Workshops</div>
-            </div>
+          <div class="browser-mockup">
+              <div class="browser-dots">
+                  <div class="browser-dot dot-red"></div>
+                  <div class="browser-dot dot-yellow"></div>
+                  <div class="browser-dot dot-green"></div>
+              </div>
+              <div class="browser-bar"></div>
+              <div class="browser-content">
+                  <div class="browser-row"></div>
+                  <div class="browser-row"></div>
+                  <div class="browser-row browser-row-large"></div>
+                  <div class="browser-two-col">
+                      <div class="browser-row browser-row-large"></div>
+                      <div class="browser-row browser-row-large"></div>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="browser-mockup">
-          <div class="browser-dots">
-            <div class="browser-dot dot-red"></div>
-            <div class="browser-dot dot-yellow"></div>
-            <div class="browser-dot dot-green"></div>
-          </div>
-          <div class="browser-content">
-            <img src="/Assets/coding_vs_programming_1200x1200.jpg" alt="Hero Image" />
-          </div>
-        </div>  
       </div>
       <div class="light-effect"></div>
-    </section>
+  </section>
+  
 
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="about-heading">
         <h2>About <span>GDG ABESEC</span></h2>
         <span class="green-underline"></span>
@@ -268,7 +276,7 @@
       </div>
     </div>
 
-    <div class="events-section">
+    <div class="events-section" id="events">
       <div class="section-header">
         <h2>Upcoming <span>Events</span></h2>
         <div class="green-underline"></div>
@@ -455,7 +463,7 @@
       </div>
     </div>
 
-    <section class="community-team-section">
+    <section class="community-team-section" id="team">
       <div class="community-team-heading">
         <h2>Meet The <span>TEAM</span></h2>
         <span class="green-underline"></span>
@@ -506,7 +514,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="foot">
       <div class="footer-container">
         <div>
           <div class="footer-logo">GDG ABESEC</div>
@@ -533,10 +541,10 @@
         <div>
           <h3 class="footer-heading">Quick Links</h3>
             <ul class="footer-links">
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Teams</a></li>
-              <li><a>Connect Us at:</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#team">Teams</a></li>
               <li><a href="mailto:dsc@abes.ac.in">dsc@abes.ac.in</a></li>
+              <li><a href="#home">Back To Top</a></li>
             </ul>
         </div>
         
