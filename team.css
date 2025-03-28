@@ -295,6 +295,7 @@
     border-radius: 20px;
     margin-right: 5px;
     font-size: 12px;
+    margin-bottom: 15px;
 }
 .section-about{
   margin-top: 20px;
@@ -322,13 +323,13 @@
 .sub-about{
 margin-top: 10px;
 }
-.about-descript span{
+/* .about-descript span{
 padding: 5px 10px;
   border-radius: 20px;
   color: white;
   line-height: 1.5;
   margin-top: 15px;
-}
+} */
 
 .about-tags{
 font-family: monospace;
