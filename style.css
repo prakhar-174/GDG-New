@@ -606,6 +606,10 @@ body {
   gap: 15px;
 }
 
+video{
+  border-radius: 5px;
+}
+
 .browser-row {
     height: 25px;
     background-color: #3A3A3A;
