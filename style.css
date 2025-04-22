@@ -528,7 +528,8 @@ body {
 /* Stats section */
 .hero-stats {
     display: flex;
-    gap: 80px;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-top: 20px;
 }
 
