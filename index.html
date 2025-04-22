@@ -129,7 +129,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#events">Events</a></li>
-          <li><a href="#">Badge</a></li>
+          <li><a href="#" onclick="showAlert(event)">Badge</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#foot">Contact Us</a></li>
       </ul>
@@ -166,18 +166,18 @@
                   <a href="https://www.commudle.com/communities/gdg-abesec" target="_blank" class="button primary-button">Join Community</a>
                   <a href="#events" class="button secondary-button">Explore Events</a>
               </div>
-              <div class="stats">
-                  <div class="stat-item">
-                      <div class="stat-number blue-number">700+</div>
-                      <div class="stat-label">Community Members</div>
+              <div class="hero-stats">
+                  <div class="hero-stat-item">
+                      <div class="hero-stat-number blue-number">700+</div>
+                      <div class="hero-stat-label">Community Members</div>
                   </div>
-                  <div class="stat-item">
-                      <div class="stat-number green-number">50+</div>
-                      <div class="stat-label">Events Conducted</div>
+                  <div class="hero-stat-item">
+                      <div class="hero-stat-number green-number">50+</div>
+                      <div class="hero-stat-label">Events Conducted</div>
                   </div>
-                  <div class="stat-item">
-                      <div class="stat-number yellow-number">20+</div>
-                      <div class="stat-label">Tech Workshops</div>
+                  <div class="hero-stat-item">
+                      <div class="hero-stat-number yellow-number">20+</div>
+                      <div class="hero-stat-label">Tech Workshops</div>
                   </div>
               </div>
           </div>
@@ -203,7 +203,7 @@
       <div class="light-effect"></div>
   </section>
 
-    <section class="about-section" id="about">
+    <!-- <section class="about-section" id="about">
       <div class="about-heading">
         <h2>About <span>GDG ABESEC</span></h2>
         <span class="green-underline"></span>
@@ -267,33 +267,107 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- <section class="about-stat-section">
-      <div class="about-stats-container">
-        <div class="about-stat-item">
-          <div class="about-stat-circle blue-bg">18</div>
-          <div class="about-stat-label">Core Team Members</div>
-        </div>
-
-        <div class="about-stat-item">
-          <div class="about-stat-circle green-bg">15+</div>
-          <div class="about-stat-label">Events Organized</div>
-        </div>
-
-        <div class="about-stat-item">
-          <div class="about-stat-circle yellow-bg">700+</div>
-          <div class="about-stat-label">Community Members</div>
-        </div>
-
-        <div class="about-stat-item">
-          <div class="about-stat-circle red-bg">20+</div>
-          <div class="about-stat-label">Tech Workshops</div>
-        </div>
-      </div>
     </section> -->
 
-    <div class="impact-section">
+    <section id="about">
+      <h1>Who We Are ?</h1>
+      <p class="about-subtitle">“Where developers don’t just code — they collaborate, create, and lead.” <br>
+        Welcome to GDG ABESEC - a vibrant ecosystem of developers, designers, and innovators fueled by the power of Google technologies.</p>
+      
+      <div class="about-content-cards">
+          <div class="about-card">
+              <div class="about-card-decoration">
+                  <div class="pink-shape"></div>
+                  <div class="pink-shape"></div>
+              </div>
+              <h3>🤝 Dev Together</h3>
+              <p>“Community isn’t a Slack group — it’s your personal stack of mentors, peers, and collaborators.” We're crafting a space where devs help devs.
+              </p>
+          </div>
+          
+          <div class="about-card">
+              <div class="about-card-decoration">
+                  <div class="blue-line"></div>
+                  <div class="blue-line"></div>
+              </div>
+              <h3>🧪 The Build Zone</h3>
+              <p>“Less buzzwords. More builds.”
+                Ideas are great, but we care about shipping.
+                 Join hands-on sprints, weekend hackathons, and API playgrounds. Break it, fix it, push it to production.
+              </p>
+          </div>
+          
+          <div class="about-card">
+              <div class="about-card-decoration">
+                  <div class="green-circle"></div>
+                  <div class="green-circle"></div>
+                  <div class="green-circle"></div>
+              </div>
+              <h3>🌐 TechLink</h3>
+              <p>“One connection can change your career graph.”
+                We bring the industry to your inbox. 🔗 Meet the people behind the tools you use.</p>
+          </div>
+      </div>
+      
+      <div class="about-content-cards">
+          <div class="about-card large-card">
+              <h3>🚀 UpSkill Lab</h3>
+              <p>“Every tech stack is a ladder — and we’re the rungs.”
+                From ML bootcamps and Cloud certifications to deep dives into Kubernetes, Firebase, and more — we offer experiences designed to help you learn fast, build faster, and stay future-ready.</p>
+              
+              <div class="about-logo-container">
+                  <div class="tech-logo">
+                      <img src="Techlogo/android.png" alt="Android">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="Techlogo/chrmoe.png" alt="DevTools">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="/Techlogo/cloud.jpg" alt="Edge">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="Techlogo/firebase.png" alt="Chrome">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="Techlogo/flutter.png" alt="Flutter">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="Techlogo/google_play-logo_brandlogos.net_kuk1d-removebg-preview.png" alt="Firebase">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="Techlogo/Kubernates.png" alt="Flutter">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="Techlogo/mail.jpg" alt="Cloud">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="Techlogo/tenserflow.png" alt="Maps">
+                  </div>
+                  <!-- <div class="tech-logo">
+                      <img src="/api/placeholder/30/30" alt="Workspace">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="/api/placeholder/30/30" alt="Play">
+                  </div>
+                  <div class="tech-logo">
+                      <img src="/api/placeholder/30/30" alt="TensorFlow">
+                  </div> -->
+              </div>
+          </div>
+          
+          <div class="about-card about-logo-card">
+              <div class="devfest-logo">
+                  <span class="brackets">{</span> GDG <span class="brackets">}</span>
+              </div>
+              <div class="abesec-badge">ABESEC</div>
+              <div class="about-gdg-logo">
+                  <img src="Assets/Screenshot_2025-04-19_125020-removebg-preview.png" alt="Google Developer Groups">
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- <div class="impact-section">
       <div class="impact-header">
         <h2>Our Impact in <span>Numbers</span></h2>
         <div class="green-underline"></div>
@@ -320,7 +394,7 @@
           <div class="impact-label">Projects Completed</div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="events-section" id="events">
       <div class="section-header">
@@ -499,6 +573,31 @@
         <h2>Meet The <span>TEAM</span></h2>
         <span class="green-underline"></span>
       </div>
+
+      <section id="last-year">
+        <div class="event-photo">
+            <img src="Assets/20241226_123909882_iOS.jpg" alt="Group photo of DevFest participants">
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat-box blue">
+                <div class="stat-number">56</div>
+                <div class="stat-label">Members</div>
+            </div>
+            <div class="stat-box pink">
+                <div class="stat-number">700+</div>
+                <div class="stat-label">Community Members</div>
+            </div>
+            <div class="stat-box yellow">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Sessions</div>
+            </div>
+            <div class="stat-box green">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Workshops</div>
+            </div>
+        </div>
+    </section>
 
       <div class="community-leaders-section">
         <div class="leaders-container">

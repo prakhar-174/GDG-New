@@ -74,3 +74,7 @@ document.addEventListener('DOMContentLoaded', handleResponsiveContent);
 
 
 window.addEventListener('resize', handleResponsiveContent);
+
+function showAlert(event) {
+  event.preventDefault(); 
+  alert("This feature is coming soon!"); }
